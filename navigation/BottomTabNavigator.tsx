@@ -20,7 +20,7 @@ export default function BottomTabNavigator(): JSX.Element {
   const colorScheme = useColorScheme();
 
   return (
-    <BottomTab.Navigator initialRouteName="TabOne" tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
+    <BottomTab.Navigator initialRouteName="TabOne">
       <BottomTab.Screen
         name="TabOne"
         component={TabOneNavigator}
