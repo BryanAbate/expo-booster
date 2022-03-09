@@ -1,0 +1,46 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "unused-imports"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", ".js", ".jsx"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["warn"],
+        "@typescript-eslint/no-explicit-any": "error",
+        // curly only works with this specific setup with prettier https://github.com/prettier/eslint-config-prettier#curly
+        "curly": ["error", "all"],
+        "jsx-a11y/click-events-have-key-events": "off",
+        "import/order": [
+          "error",
+          {
+            "groups": [["builtin", "external", "internal"]],
+            "alphabetize": { "order": "asc", "caseInsensitive": true }
+          }
+        ],
+        "import/prefer-default-export": "off",
+        // max-len should always be in-sync with prettier https://github.com/prettier/eslint-config-prettier#max-len
+        "max-len": ["error", 120],
+        // Disabled for state because of RTK and immer
+        "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
+        "no-restricted-syntax": "off",
+        "react/destructuring-assignment": "off",
+        "react/jsx-key": "error",
+        "react/require-default-props": "off",
+        "@typescript-eslint/no-unused-vars": "off", // Need to be off for unused-imports to work
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": "error"
+      }
+    }
+  ]
+}
