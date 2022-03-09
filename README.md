@@ -1,8 +1,8 @@
 # Expo Booster
 
-## Propulse your Expo (React Native= application with a minimal template.
+## Propulse your Expo (React Native) application with a minimal template.
 
-A minimal template to propulse your Expo application with a state of the art tech stack:
+A minimal template to propulse your Expo application with a state of the art tech stack, lint and format rules:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -19,3 +19,17 @@ By using a very small set of features, this template aims to be easy to update s
 - Easily maintanable
 - Easily extandable
 - Suits most needs
+
+## What is missing
+
+### Styling
+
+This repo does not give any guideline for styling for now.
+
+## FAQ
+
+### Why are there out of the box linting errors?
+
+Errors lie in the default Expo TypeScript code. It mostly sits there to suggest a folder structure and verify the code can build. This code is supposed to be thrown away so no time were spent to fix longer issues. In the future we might want to offer a custom base application instead of Expo's default.
+
+All files that are essential pass lint check.

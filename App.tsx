@@ -9,7 +9,7 @@ import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 import { store } from './store/store';
 
-export default function App() {
+export default function App(): JSX.Element | null {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
