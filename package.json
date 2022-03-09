@@ -11,7 +11,9 @@
     "eject": "expo eject",
     "test": "jest --watchAll",
     "lint": "eslint . --report-unused-disable-directives",
-    "lint:fix": "eslint . --report-unused-disable-directives --fix"
+    "lint:fix": "eslint . --report-unused-disable-directives --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "jest": {
     "preset": "jest-expo"
