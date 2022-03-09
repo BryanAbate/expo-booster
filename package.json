@@ -1,7 +1,26 @@
 {
   "name": "expo-booster",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
+  "description": "Propulse your Expo (React Native) application with a minimal state of the art template.",
+  "homepage": "https://github.com/BryanAbate/expo-booster",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BryanAbate/expo-booster.git"
+  },
+  "keywords": [
+    "react native",
+    "react",
+    "expo",
+    "boilerplate",
+    "template",
+    "redux",
+    "navigation"
+  ],
+  "author": {
+    "name": "Bryan Abate",
+    "url": "https://github.com/BryanAbate"
+  },
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",

@@ -1,6 +1,6 @@
 # Expo Booster
 
-## Propulse your Expo (React Native) application with a minimal template.
+## Propulse your Expo (React Native) application with a minimal state of the art template.
 
 A minimal template to propulse your Expo application with a state of the art tech stack, lint and format rules:
 
