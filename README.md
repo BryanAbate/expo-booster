@@ -17,7 +17,7 @@ The goal is to provide a minimal template for Expo applications in TypeScript. T
 By using a very small set of features, this template aims to be easy to update so that latest packages are always in use. This comes with some benefits:
 
 - Easily maintanable
-- Easily extandable
+- Easily extendable
 - Suits most needs
 
 ## What is missing

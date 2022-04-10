@@ -14,7 +14,7 @@
   },
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx", ".js", ".jsx"],
+      "files": ["*.ts", "*.tsx"],
       "rules": {
         "@typescript-eslint/explicit-module-boundary-types": ["warn"],
         "@typescript-eslint/no-explicit-any": "error",
@@ -43,7 +43,7 @@
         "import/prefer-default-export": "off",
         "max-classes-per-file": "off",
         // max-len should always be in-sync with prettier https://github.com/prettier/eslint-config-prettier#max-len
-        "max-len": ["error", 120],
+        "max-len": ["error", 120, { "ignoreUrls": true }],
         // Disabled for state because of RTK and immer
         "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
         "no-restricted-syntax": "off",
@@ -55,5 +55,6 @@
         "unused-imports/no-unused-vars": "error"
       }
     }
-  ]
+  ],
+  "ignorePatterns": "**/*.js"
 }
