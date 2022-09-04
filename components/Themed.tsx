@@ -3,7 +3,6 @@
  * https://docs.expo.io/guides/color-schemes/
  */
 
-import * as React from 'react';
 import { Text as DefaultText, View as DefaultView } from 'react-native';
 
 import Colors from '../constants/Colors';
@@ -34,6 +33,7 @@ export function Text(props: TextProps): JSX.Element {
   const { style, lightColor, darkColor, ...otherProps } = props;
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <DefaultText style={[{ color }, style]} {...otherProps} />;
 }
 
@@ -41,5 +41,6 @@ export function View(props: ViewProps): JSX.Element {
   const { style, lightColor, darkColor, ...otherProps } = props;
   const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
 
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <DefaultView style={[{ backgroundColor }, style]} {...otherProps} />;
 }

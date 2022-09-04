@@ -48,6 +48,7 @@
         "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
         "no-restricted-syntax": "off",
         "react/destructuring-assignment": "off",
+        "react/react-in-jsx-scope": "off",
         "react/jsx-key": "error",
         "react/require-default-props": "off",
         "@typescript-eslint/no-unused-vars": "off", // Need to be off for unused-imports to work

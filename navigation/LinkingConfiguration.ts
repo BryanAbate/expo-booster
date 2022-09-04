@@ -4,10 +4,13 @@
  * https://reactnavigation.org/docs/configuring-links
  */
 
+import { LinkingOptions } from '@react-navigation/native';
 import * as Linking from 'expo-linking';
 
-export default {
-  prefixes: [Linking.makeUrl('/')],
+import { RootStackParamList } from '../types';
+
+const linking: LinkingOptions<RootStackParamList> = {
+  prefixes: [Linking.createURL('/')],
   config: {
     screens: {
       Root: {
@@ -24,7 +27,10 @@ export default {
           },
         },
       },
+      Modal: 'modal',
       NotFound: '*',
     },
   },
 };
+
+export default linking;
